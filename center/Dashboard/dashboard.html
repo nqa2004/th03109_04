@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./sytle.css">
+
+    <style>
+        .icon-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-container a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .icon-container i {
+            font-size: 40px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .icon-container i:hover {
+            color: #3498db;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/Untitled.png"></a>
+                    <h2>ADN <span class="danger">SHOP</span></h2>
+                </div>
+
+                <div class="close" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="sidebar">
+
+                <a href="#" class="active">
+                    <i class="fa-solid fa-bars"></i>
+                    <h3>Tổng quát</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h3>Doanh thu</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <h3>Báo cáo</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-message"></i>
+                    <h3>Tin nhắn</h3>
+                    <span class="message-count">99+</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <h3>Sản phẩm</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Tài khoản</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Cài đặt</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>Đánh giá</h3>
+                </a>
+
+                <a href="../index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h3>Thoát</h3>
+                </a>
+
+
+
+            </div>
+        </aside>
+
+        <main>
+            <h1> DASHBOARD </h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3> Tiền lời </h3>
+                            <h1>25.024.000đ</h1>
+                        </div>
+                        <div class="progress">
+                            <svg width="80" height="80">
+                                <circle class="progress-bar" cx="40" cy="40" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24h gần nhất</small>
+                </div>
+
+                <div class="expenses">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3> Chi trả </h3>
+                            <h1>14.160.000đ</h1>
+                        </div>
+                        <div class="progress">
+                            <svg width="80" height="80">
+                                <circle class="progress-bar" cx="40" cy="40" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24h gần nhất</small>
+                </div>
+
+                <div class="income">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Tồn kho</h3>
+                            <h1>9.775.000đ</h1>
+                        </div>
+                        <div class="progress">
+                            <svg width="80" height="80">
+                                <circle class="progress-bar" cx="40" cy="40" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <small class="text-muted">24h gần nhất</small>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h2> Đơn mua hàng </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Mã sản phẩm</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPhone 15 PRM</td>
+                            <td>001</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>AppleWatch</td>
+                            <td>002</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>Macbook Air</td>
+                            <td>003</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>iPad mini 6</td>
+                            <td>004</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>iPhone 13</td>
+                            <td>005</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>iPhone 15 PRM</td>
+                            <td>006</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>iPhone 15 PRM</td>
+                            <td>007</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>iPhone 15 PRM</td>
+                            <td>008</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+                        <tr>
+                            <td>iPhone 15 PRM</td>
+                            <td>009</td>
+                            <td>Tiền mặt</td>
+                            <td class="warning">Hoàn thành</td>
+                            <td class="primary">Chi tiết</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <a href="#">Xem tất cả</a>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                    Menu
+                </button>
+                <div class="theme-toggler">
+                    <i class="fa-solid fa-sun active"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p> Chào,<b>Dũng</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../img/bl2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-updates">
+                <h2> Nhận xét </h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../img/bl1.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Minus</b>: Sang xịn mịn!
+                            </p>
+                            <small class="text-muted">2 phút trước </small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../img/bl3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>J97</b>: Đom đóm ơi!.
+                            </p>
+                            <small class="text-muted">19 phút trước </small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../img/bl4.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Oi oi oi</b>: Maaaa!.
+                            </p>
+                            <small class="text-muted">20 phút trước </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sales-analytics">
+                <h2>Hình thức mua hàng</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3> Đặt hàng Online </h3>
+                            <small class="text-muted">24h trước</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>9696</h3>
+                    </div>
+                </div>
+
+                <div class="item online">
+                    <div class="icon">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Mua offline</h3>
+                            <small class="text-muted">24h trước</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>1100</h3>
+                    </div>
+                </div>
+
+                <div class="item online">
+                    <div class="icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Đặt trước</h3>
+                            <small class="text-muted">24h trước</small>
+                        </div>
+                        <h5 class="success">+26%</h5>
+                        <h3>998</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>Liên hệ</div>
+                    <div>
+                        <h3 class="icon-container">
+                            <a href="https://www.facebook.com/jookoii/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://github.com/Zugpro2k4"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/ypit_241/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@ejookyy"> <i class="fa-brands fa-tiktok"></i></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="text-align: center;">Ban quyen thuoc ve Duc Dung-Quang Anh-Nam</p>
+    </footer>
+
+    <audio id="background-music"
+        src="/Dashboard../img/y2mate.com - Nhạc nền One Piece đang thịnh hành trên Tik Tok Việt Nam.mp3" loop></audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audio = document.getElementById('background-music');
+            var playPromise = audio.play();
+
+            // Check if the autoplay was prevented
+            if (playPromise !== undefined) {
+                playPromise.then(function () {
+                    // Autoplay started successfully
+                }).catch(function (error) {
+                    // Autoplay was prevented, add a user interaction listener
+                    console.log('Autoplay was prevented:', error);
+
+                    // Add event listener for user interaction
+                    document.body.addEventListener('click', startAudio);
+                    document.body.addEventListener('touchstart', startAudio);
+                });
+            }
+        });
+
+        function startAudio() {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(function (error) {
+                console.log('Playback failed:', error);
+            });
+
+            // Remove the event listeners after the first interaction
+            document.body.removeEventListener('click', startAudio);
+            document.body.removeEventListener('touchstart', startAudio);
+        }
+    </script>
+
+</body>
+
+</html>
